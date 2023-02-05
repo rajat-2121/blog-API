@@ -12,3 +12,12 @@
 </code></pre>
 
 ( Your system should have node.js and mongoDB ) 
+
+## Libraries and frameworks used
+<pre><code>express
+mongoose
+bcrypt
+jwt
+jest
+supertest
+</code></pre>
