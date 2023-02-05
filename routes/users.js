@@ -13,6 +13,7 @@ router.get("/", auth, async (req, res) => {
     }
 });
 
+// get my posts
 router.get("/myposts", auth, async (req, res) => {
     try {
         const myPosts = await Post.find({createdBy: req.username});
@@ -22,7 +23,7 @@ router.get("/myposts", auth, async (req, res) => {
     }
 });
 
-// get user
+// get user info
 router.get("/:username", async (req, res) => {
     try {
         const user = await User.findOne({username: req.params.username});
